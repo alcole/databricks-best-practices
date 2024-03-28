@@ -15,10 +15,6 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        env:
-          SUPER_SECRET: ${{ secrets.ACCESS_TOKEN }}
-        run: echo "$SUPER_SECRET" | sed 's/./& /g'
       - name: Run test notebook
         uses: databricks/run-notebook@main
         with:
