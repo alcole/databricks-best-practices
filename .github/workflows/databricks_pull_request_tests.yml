@@ -18,7 +18,7 @@ jobs:
       - name: Run test notebook
         uses: databricks/run-notebook@main
         with:
-          databricks-token: ${{ secrets.DATABRICKS_TOKEN }}
+          databricks-token: ${{ secrets.ACCESS_TOKEN }}
 
           local-notebook-path: notebooks/run_unit_tests.py
 
