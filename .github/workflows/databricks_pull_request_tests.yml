@@ -18,11 +18,11 @@ jobs:
       - name: Run test notebook
         uses: databricks/run-notebook@main
         with:
-          databricks-token: TCU8Q~dK3y39--~4.tosl.OfbPJr2VzwHVGr1aWr
+          databricks-token: "TCU8Q~dK3y39--~4.tosl.OfbPJr2VzwHVGr1aWr"
 
           local-notebook-path: notebooks/run_unit_tests.py
 
-          existing-cluster-id: ${{ secrets.CLUSTER_ID }}
+          existing-cluster-id: 0326-091429-s9i8f8ii
 
           git-commit: "${{ github.event.pull_request.head.sha }}"
 
