@@ -1,0 +1,39 @@
+name: Run pre-merge Databricks tests
+
+on:
+  pull_request:
+
+env:
+  # Replace this value with your workspace instance name.
+  DATABRICKS_HOST: https://adb-5741265693868923.3.azuredatabricks.net
+
+jobs:
+  unit-test-notebook:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4 
+      - name: Run test notebook
+        uses: databricks/run-notebook@main
+        with:
+          databricks-token: ${{ secrets.DATABRICKS_TOKEN }}
+
+          local-notebook-path: notebooks/run_unit_tests.py
+
+          existing-cluster-id: 0326-091429-s9i8f8ii
+
+          git-commit: "${{ github.event.pull_request.head.sha }}"
+
+          # Grant all users view permission on the notebook's results, so that they can
+          # see the result of the notebook, if they have related access permissions.
+          access-control-list-json: >
+            [
+              {
+                "group_name": "users",
+                "permission_level": "CAN_VIEW"
+              }
+            ]
+          run-name: "EDA transforms helper module unit tests"
+        
