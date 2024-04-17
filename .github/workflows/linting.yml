@@ -9,7 +9,7 @@ jobs:
     - uses: actions/checkout@v4
     - uses: actions/setup-python@v5
       with:
-       python-version: '3.9'
+       python-version: '3.11'
        cache: 'pip' # caching pip dependencies
     - run: pip install --upgrade pip
     - run: pip install pylint-plugin-for-databricks
@@ -32,7 +32,7 @@ jobs:
        # and lint the package(s) or python file(s) specified with the `lint-path` argument
        #
        # Required
-       python-version: 3.9
+       python-version: 3.11
      
        # Path of the requirements of your project, relative to the repository root. 
        # This can be easily changed in case you have `requirements-dev.txt`
