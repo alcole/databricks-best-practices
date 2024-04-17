@@ -13,4 +13,4 @@ jobs:
        cache: 'pip' # caching pip dependencies
     - run: pip install pylint
     - run: pip install databricks-labs-pylint
-    - run: pylint --load-plugins=databricks.labs.pylint.all databricks-best-practices/covid_analysis/transforms.py
+    - run: pylint --load-plugins=databricks.labs.pylint.all covid_analysis/transforms.py
