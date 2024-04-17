@@ -38,7 +38,7 @@ jobs:
        # This can be easily changed in case you have `requirements-dev.txt`
        #
        # Optional, Default: requirements.txt
-       requirements-path: requirements.txt
+       #requirements-path: requirements.txt
        
        # Path of the README.md to update with the pylint badge, relative to the repository root.
        #
