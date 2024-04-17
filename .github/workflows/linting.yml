@@ -11,7 +11,8 @@ jobs:
       with:
        python-version: '3.9'
        cache: 'pip' # caching pip dependencies
-    - run: pip install pylint-plugin-for-databricks
+    - run: pip install --upgrade pip
+            pip install pylint-plugin-for-databricks
     - uses: Silleellie/pylint-github-action@v2
       with:
       
