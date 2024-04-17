@@ -1,0 +1,39 @@
+     - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+          cache: 'pip' # caching pip dependencies
+      - run: pip install -r pylint-plugin-for-databricks
+      -name: linting
+       uses: Silleellie/pylint-github-action@v2
+       with:
+         lint-path: notebooks
+         python-version: 3.9
+         readme-path: README.md
+         # Text to display in the badge
+         #
+         # Optional, Default: PyLint
+         badge-text: PyLint
+         # Color of the badge for pylint scores < 5.
+         # Hex, rgb, rgba, hsl, hsla and css named colors can all be used
+         #
+         # Optional, Default: red
+         color-bad-score: red
+    
+         # Color of the badge for pylint scores in range [5,8).
+         # Hex, rgb, rgba, hsl, hsla and css named colors can all be used
+         # 
+         # Optional, Default: orange
+         color-ok-score: orange
+    
+        # Color of the badge for pylint scores in range [8,10).
+        # Hex, rgb, rgba, hsl, hsla and css named colors can all be used
+        #
+        # Optional, Default: yellow
+        color-good-score: yellow
+    
+        # Color of the badge for pylint scores == 10.
+        # Hex, rgb, rgba, hsl, hsla and css named colors can all be used
+        #
+        # Optional, Default: brightgreen
+        color-perfect-score: brightgreen
