@@ -27,7 +27,9 @@ jobs:
         #   ...
         # 
         # Required
-        lint-path: covid_analysis/transforms.py
+        lint-path: 
+          covid_analysis/transforms.py
+          notebooks/covid_eda_raw.py
         
         # Version of the Python interpreter which will install all requirements of your project 
         # and lint the package(s) or python file(s) specified with the `lint-path` argument
