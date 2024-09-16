@@ -22,7 +22,7 @@ jobs:
 
           local-notebook-path: notebooks/run_unit_tests.py
 
-          existing-cluster-id: 0912-150820-fm5xfxmt
+          existing-cluster-id: 0916-174157-qaa5kz0w
 
           git-commit: "${{ github.event.pull_request.head.sha }}"
 
