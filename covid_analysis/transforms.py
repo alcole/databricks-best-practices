@@ -22,3 +22,4 @@ def clean_spark_cols(pdf):
 def index_to_col(df, colname):
     df[colname] = df.index
     return df
+

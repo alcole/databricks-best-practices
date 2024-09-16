@@ -20,7 +20,6 @@ def colnames_df() -> pd.DataFrame:
     data=[[0,1,2,3,4,5]],
     columns=[
       "Daily ICU occupancy",
-      "Daily ICU occupancy per million",
       "Daily hospital occupancy",
       "Daily hospital occupancy per million",
       "Weekly new hospital admissions",
