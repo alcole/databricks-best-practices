@@ -3,6 +3,18 @@
 # databricks-best-practices
 running best practices from documentation
 
-see documentation here: https://learn.microsoft.com/en-us/azure/databricks/notebooks/best-practices
+![databricks logo](https://upload.wikimedia.org/wikipedia/commons/6/63/Databricks_Logo.png)
+
+My code and configuration from my recent demos
+
+* unit testing
+* linting
+* automation
+
+based on the following
+
+[MS Learn page on notebook best practices](https://learn.microsoft.com/en-us/azure/databricks/notebooks/best-practices)
+
+[Blogpost on linting in Databricks projects](https://www.alexcole.net/databricks-linting-with-a-new-plugin-for-pylint/)
 
 
