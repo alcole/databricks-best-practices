@@ -49,3 +49,4 @@ def test_clean_cols(colnames_df):
 def test_index_to_col(raw_input_df):
   raw_input_df["col_from_index"] = raw_input_df.index
   assert (raw_input_df.index == raw_input_df.col_from_index).all()
+  
