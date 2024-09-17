@@ -15,3 +15,5 @@ based on the following pages
 [Blogpost on linting in Databricks projects](https://www.alexcole.net/databricks-linting-with-a-new-plugin-for-pylint/)
 
 Requires 14.3 LTS
+
+[link to my blogpost on the talk details](https://www.alexcole.net/databricks-high-quality-testable-solutions/)
