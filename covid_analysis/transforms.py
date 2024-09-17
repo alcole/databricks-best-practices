@@ -1,3 +1,5 @@
+"""module providing functions for transforming the data in the demo"""
+
 import pandas as pd
 
 # Filter by country code.
