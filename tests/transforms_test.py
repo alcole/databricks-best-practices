@@ -37,7 +37,7 @@ def test_filter(raw_input_df):
 # The test data has NaNs for Daily ICU occupancy; this should get filled to 0.
 def test_pivot(raw_input_df):
   pivoted = pivot_and_clean(raw_input_df, 0)
-  assert pivoted["Daily ICU occupancy"][0] == 0
+  assert pivoted["Daily ICU occupancy"].iloc[0] == 0
 
 # Test column cleaning.
 def test_clean_cols(colnames_df):
