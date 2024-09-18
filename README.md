@@ -17,4 +17,3 @@ based on the following pages
 Requires 14.3 LTS
 
 [link to my blogpost on the talk details](https://www.alexcole.net/databricks-high-quality-testable-solutions/)
-
